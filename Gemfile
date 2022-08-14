@@ -65,6 +65,12 @@ group :development do
   # gem "spring"
 end
 
+
+
+group :development, :test do
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-rails'end
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
